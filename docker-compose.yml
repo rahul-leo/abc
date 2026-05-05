@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build: .
+    image: simple-frontend
+    container_name: simple-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
